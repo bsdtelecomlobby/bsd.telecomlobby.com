@@ -1,0 +1,468 @@
+.col1 {
+	position: relative; /* Necesario para el watermark */
+}
+
+.col1::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-image: url('/Imagenes/bsdtelecom_lobby_torre.webp');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	opacity: 0.12; /* Ajusta la opacidad según lo sutil que quieras el watermark */
+	pointer-events: none;
+	z-index: 0;
+}
+
+.col1 > * {
+	position: relative;
+	z-index: 1;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(/webfonts/ubuntu-v15-latin-regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu Mono'), url(/webfonts/ubuntu-mono-v19-latin-regular.woff2) format('woff2');
+}
+body {
+	margin:0;
+	padding:0;
+	padding-top: 50px;
+
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#eee;
+  	min-width: 320px;		/* Minimum width of layout - remove line if not required */					/* The min-width property does not work in old versions of Internet Explorer */
+  	max-width: 1280px;
+	font-size:90%;
+	color: #5c5c5c;
+	font-family: 'Ubuntu Mono';
+	line-height: 1.3em;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+        letter-spacing: -.0027777778rem;
+}
+
+
+
+
+thead th {
+	text-align: center;
+}
+
+tbody {
+	border: inherit;
+}
+tr {
+	background-color:;
+	border: none;
+}
+
+th, td {
+	/*padding: 0.31em;*/
+ 	text-align: left;
+	border: none;
+}
+
+a {
+	color:#369;
+}
+a:hover {
+	color:#fff;
+	background:#98b0ca;
+	text-decoration:none;
+}
+#layoutdims {
+	clear:both;
+	background:#98b0ca;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:left;
+	font-style: italic;
+}
+/*
+h1, h2, h3 {
+	margin:.8em 0 .2em 0;
+	padding:0;
+}
+*/
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+.proyectos {
+	width: 500px;
+	height: 300px;
+	display: block;
+	overflow: hidden;
+	border: 1px dashed #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* **KEY CENTERING STEPS** */
+  /* Enable Flexbox on the container */
+  display: flex;
+  /* Center children horizontally */
+  justify-content: center;
+  /* Center children vertically */
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.dashed + .proyectos {
+	margin-top: 0em;
+}
+
+.proyectos img{
+	
+	width:95%;	
+	height: 95%;
+	object-fit: contain;
+}
+
+
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:90%;			/* width of whole page */
+	overflow:hidden;
+	margin-bottom: 50px;	/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+	z-index: 1;
+}
+.col1 {
+  font-size: 111%;
+  
+  
+}
+
+.col1 > ul > li {
+  margin: 0.5em;  
+}
+.main {
+  max-width: 80%;
+  font-size: 0.9rem;
+}
+
+.col1 > p
+.col1 > table, tbody > tr > td > p {
+  line-height: 131%;
+  margin: 0;
+	
+  padding: 0;
+  font-size: 0.9rem;
+}
+.col1 > table {
+	border: none;
+	margin-bottom: 10px;
+}
+
+.col1 > hr {
+	  border-top: 1px dashed #eee;
+	  display: block;
+  	  height: 1px;
+}
+#watermark {
+    position: absolute; /* O usa 'fixed' si quieres que no se mueva al scroll */
+    top: 0; /* Desde la parte superior */
+    right: 0; /* Pegado al lado derecho */
+    width: 200px; /* Ancho de la imagen de la torre, ajusta según tu PNG */
+    height: 100vh; /* Altura completa de la ventana (viewport) para que sea verticalmente larga */
+    background-image: url('/Imagenes/bsdtelecom_lobby_torre.webp'); /* Ruta a tu imagen PNG */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: contain; /* Ajusta la imagen para que quepa sin distorsión */
+    background-position: center right; /* Centrada en el derecho */
+    opacity: 0.2; /* Transparencia: 0.2 es baja como un watermark sutil, ajusta entre 0 y 1 */
+    pointer-events: none; /* Para que no interfiera con clics en el contenido */
+    z-index: 0; /* Debajo del contenido */
+}
+
+.supertitle {
+	display: block !important;
+	width: auto;
+	height: auto;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+.dashed{
+	display: inline-block;
+  	width: auto;
+  	height: auto;
+  	padding-bottom: 0.5em;
+	border-bottom: 1px dashed #5c5c5c;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+.col1 > div > h2 {
+	display: inline;
+	margin-bottom: 0;
+}
+.col1 > div > h3 {
+	display: inline;
+	margin-bottom: 0;
+}
+.col1 > div > i {
+	font-size: 80%;
+}
+.col1 > dl {
+	margin: 0;	
+}
+.inside {
+	max-width: 75%;
+	font-size: 0.95rem;
+}
+.right {
+	float: right;
+	max-width: 75%;
+	font-size: 0.95rem;
+}
+.inside > tbody > tr {
+	padding-bottom: 2em;
+	padding-top: 2em;
+}
+.others {
+	width: 90%;
+	font-size: 0.8rem;
+	
+}
+.others > thead > tr > th {
+	text-align: left;
+}
+.small {
+	font-size: 0.8rem;
+}
+
+/* Espaciado: p.small tiene más separación por defecto
+   pero se reduce cuando está junto a una lista (ul) o a otro p.small */
+p.small {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* Si p.small sigue a una lista, elimina la separación superior extra */
+ul + p.small {
+	margin-top: 0;
+}
+
+/* Si p.small va seguido inmediatamente por una lista, elimina la separación superior de la lista */
+p.small + ul {
+	margin-top: 0;
+}
+
+/* Si hay dos p.small consecutivos, reduzca la separación entre ellos */
+p.small + p.small {
+	margin-top: 0em;
+}
+
+.medium {
+	font-size: 0.9rem;
+}
+p.medium {
+	margin-top: 1.3em;
+}
+p.medium + p.medium {
+	margin-top: 0em;
+}
+/* 3 Column settings */
+.threecol {
+	background:#eee;		/* right column background colour */
+}
+.threecol .colmid {
+	right:5%;			/* width of the right column */
+	background:#fff;		/* center column background colour */
+}
+.threecol .colleft {
+	right:90%;			/* width of the middle column */
+	background:#f4f4f4;	/* left column background colour */
+}
+.threecol .col1 {
+	width:90%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:6%;			/* Width of left column content (column width minus padding on either side) */
+	left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:6%;			/* Width of right column content (column width minus padding on either side) */
+	left:85%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+span.red {
+	color:#c60b1e;
+}
+span.ama {
+	color:#ffc400;
+}
+span.bismark {
+  color: #98b0ca;
+}
+
+span.nou {
+  color: #c60b1e;
+  font-size: 131%;
+}
+span.seis {
+  color: #ffc400;
+  font-size: 131%;
+}
+h1 em,
+h2 em {
+	color:#98b0ca;
+}
+
+img.border {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  margin-right: 3em;
+}
+a img {
+	text-decoration:none;
+}
+
+label.menuicon {
+  z-index: 9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: hsla(0,0%,100%,.8);
+  cursor: pointer;
+}
+
+label.menuicon:hover {
+  opacity: 0.4;
+}
+
+.menuicon span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  margin-bottom: 4px;
+  background-color: #d43900;
+}
+
+.donationLinks {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+.donationLinks img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twoThirds {
+  max-width: 1000px;
+}
+
+
+label.menuicon {
+  width: 250px;
+}
+
+
+
+/* mobile overrides, reverse notion of hamburger icon */
+/* Media query para móviles */
+@media (max-width: 768px) {
+	body {
+		all: initial;
+		font-family: 'Ubuntu Mono';
+    	font-style: normal;
+   	 	font-weight: 400;
+		font-size: 14px !important;
+	}
+	.col1 {
+		padding: 0.1em;
+	}
+	.col1 > table, tbody > tr > td {
+		display: block;
+		
+	}
+	ul, ol {
+		padding: 0;
+		
+		
+	}
+	.others {
+		
+		width: 100%;
+		
+		
+	}
+	.others > thead {
+		display: none;
+	}
+	.dashed{
+		display: inline-block;
+		width: auto;
+		height: auto;
+		padding-bottom: 0.5em;
+		border-bottom: none;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	.proyectos {
+		width: 280px;
+		height: 168px;
+		display: block;
+		overflow: hidden;
+		border: none;
+		border-radius: none;
+		padding: none;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		/* **KEY CENTERING STEPS** */
+		/* Enable Flexbox on the container */
+		display: flex;
+		/* Center children horizontally */
+justify-content: left;
+  /* Center children vertically */
+  align-items: left;
+		/* Center children vertically */
+		box-shadow: none;
+	}
+	.dashed + .proyectos {
+		margin-top: 0em;
+	}
+
+	.proyectos img{
+		
+		width:95%;	
+		height: 95%;
+		object-fit: contain;
+		float: left;
+	}
+}

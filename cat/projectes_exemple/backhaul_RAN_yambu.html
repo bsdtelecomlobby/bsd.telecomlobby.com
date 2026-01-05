@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ca-es" dir="ltr" prefix="og: https://ogp.me/ns#">
+<head>
+	<title>BSDTelecom Lobby SL, Redama | Backhaul RAN a Yambu</title>
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' >
+	<meta name="description" content="Riccardo Giuntoli busca noves col·laboracions, tant a distància com presencials. Disponible a Europa i Amèrica Central i del Sud. Truca ara al +34938962775!" >
+	<meta name="keywords" content="Unix, 5G, RAN, GPON, backbone, wireless, Mikrotik, Cisco, Ubiquiti, Fortinet, firewalling, load balancing, Ipsec, Wireguard, SSL, SSH, Radius, monitoring, Zabbix, Grafana, Netbox">
+	<meta name="robots" content="index, follow">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/a9d4d4bc8d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="/Css/screen.css" media="screen">
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KDK2B2RTH"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-9KDK2B2RTH');
+	</script>
+</head>
+<body>  
+      <div class="colmask threecol">
+        <div class="colmid">
+            <div class="colleft">
+                <div class="col1">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="/Imagenes/redama_logotipo.webp" title="BSDTelecom Lobby SL, Redama | Logotip" >
+                                </td>
+                                <td>
+                                    <p><i class="fas fa-solid fa-user-tie"></i>&nbsp;&nbsp;REDAMA, BSDTelecom Lobby SL</p>
+                                    <p><i class="fas fa-solid fa-city"></i>&nbsp;&nbsp;Sant Pere de Ribes, ES</p>
+                                    <p><i class="fa-solid fa-mobile"></i>&nbsp;&nbsp;+34 660 92 28 90</p>
+                                    								                                    <p><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/bsdtelecomlobby">bsdtelecomlobby</a></p>
+                                    <p><i class="fas fa-solid fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:riccardo@redama.cat" title="Redama | Riccardo Giuntoli correu electrònic">riccardo@redama.cat</a></p>
+                                    <p><i class="fas fa-solid fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:riccardo@bsd.telecomlobby.com" title="Redama | Riccardo Giuntoli correo electronico">riccardo@bsd.telecomlobby.com</a></p>
+                                </td>
+                            </tr>
+                        </tbody>
+				    </table>
+                    <div class="supertitle"><h2>Backhaul privada per RAN 5G a Yambu</h2></div>
+                    <div class="dashed"><h3>ÍNDEX</h3></div>	
+                    <ul>
+                        <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html" title="BSDTelecom Lobby SL, Redama | Backhaul privada per RAN 5G a Yambu Riccardo Giuntoli">Backhaul privada per RAN 5G a Yambu</a>
+                            <ul>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#pop_backhaul" title="BSDTelecom Lobby SL, Redama | Punts de presència backhaul">Punts de presència backhaul</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#red_backhaul" title="BSDTelecom Lobby SL, Redama | Disseny complet xarxa de backhaul">Disseny complet xarxa de backhaul</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#princ_A" title="BSDTelecom Lobby SL, Redama | Enllaç torre principal feia torre A">Enllaç torre principal feia torre A</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#princ_B" title="BSDTelecom Lobby SL, Redama | Enllaç torre principal feia torre B">Enllaç torre principal feia torre B</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#princ_C" title="BSDTelecom Lobby SL, Redama | Enllaç torre principal feia torre C">Enllaç torre principal feia torre C</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#princ_D" title="BSDTelecom Lobby SL, Redama | Enllaç torre principal feia torre D">Enllaç torre principal feia torre D</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html" title="BSDTelecom Lobby SL, Redama | Enllaços de seguretat xarxa de backhaul Riccardo Giuntoli">Enllaços de seguretat xarxa de backhaul</a>
+                            <ul>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#A_B" title="BSDTelecom Lobby SL, Redama | Enllaç de respatller torre A feia torre B">Enllaç de respatller torre A feia torre B</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#B_C" title="BSDTelecom Lobby SL, Redama | Enllaç de respatller torre B feia torre C">Enllaç de respatller torre B feia torre C</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#C_D" title="BSDTelecom Lobby SL, Redama | Enllaç de respatller torre C feia torre D">Enllaç de respatller torre C feia torre D</a></li>
+                                <li><a href="/cat/projectes_exemple/backhaul_RAN_yambu.html#D_A" title="BSDTelecom Lobby SL, Redama | Enllaç de respatller torre D feia torre A">Enllaç de respatller torre D feia torre A</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/cat" title="BSDTelecom Lobby SL, Redama | Currículum Vitae executiu Riccardo Giuntoli">Currículum Vitae executiu</a></li>
+                        
+                        <li><a href="/cat/portafoli_tecnic/" title="BSDTelecom Lobby SL, Redama | Portafoli tècnic Riccardo Giuntoli">Portafoli tècnic</a></li>
+                        <li><a href="/cat/projectes_exemple/" title="BSDTelecom Lobby SL, Redama | Projectes d'exemple Riccardo Giuntoli">Projectes d'exemple</a></li>
+                        
+                        <li><a href="/cat/cartes_recomanacio" title="BSDTelecom Lobby SL, Redama | Cartes de recomanacions pel treball de Riccardo Giuntoli">Cartes de recomanacions</a></li>
+				    </ul>
+                  <div class="dashed"><h3 id="pop_backhaul">Punts de presència backhaul</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/RAN_privada_5G_1.webp" alt="RAN privada 5G"> </div>
+                   <p class="inside">Necessitem donar servei a les cinc torres amb tecnologia de backhaul redundant. Adoptem dues bandes sense llicència: la de 60 GHz per a la connexió punt a punt principal i la de 5 GHz per a les còpies de seguretat redundants de commutació per error.
+Els punts geogràfics són estimats, menys la "TORRE PRINCIPAL", que sembla ja existir.
+Les dades topogràfics satel·litàries s'utilitzen per a l'aixecament del terreny i la cobertura de ràdio.</p>
+                    <div class="dashed"><h3 id="red_backhaul">Disseny complet de la xarxa de backhaul</h3></div>
+                    <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_1.webp" alt="backhaul privada 5G"> </div>
+                    <p class="inside">Quatre backhaul punt a punt, operant a 60 GHz amb suport automàtic en 5 GHz, prevenen pluges torrencials i connecten la TORRE PRINCIPAL amb les torres A, B, C i D.
+Quatre backhaul més punt a punt, operant a 5 GHz, prevenen errors de maquinari connectant A amb B, B amb C, C amb D i D amb A.</p>
+                    <div class="dashed"><h3 id="princ_A">Enllaç torre principal feia torre A</h3></div>
+                    <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_2.webp" alt="backhaul privada 5G"> </div>
+                    <table class="others">
+                        <thead>
+                            <tr>
+                                <th>Tipus</th>
+                                <th>Descripció</th>
+                                <th>Dades</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                               <td><b>Freqüència</b></td>
+                                <td>SELECCIONAT PER INTEL·LIGÈNCIA ARTIFICIAL ENTRE 58320 MHz i 69120 MHz.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                               <td><b>Alçada d'instal·lació</b></td>
+                                <td>20 metros.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                                <td><b>Distància entre antenes</b></td>
+                                <td>5.35 quilòmetres</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                                <td><b>Azimut torre principal, A</b></td>
+                                <td>316 graus norte / oest</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                                <td><b>Azimut A, torre principal</b></td>
+                                <td>136 graus sur / est</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                                <td><b>Senyal estimat</b></td>
+                                <td>-41 dBm</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-gauge-high"></i></td>
+                                <td><b>Prestacions estimades</b></td>
+                                <td>2.7 gbps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>====</p>
+                   <div class="dashed"><h3 id="princ_B">Enllaç torre principal feia torre B</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_3.webp" alt="backhaul privada 5G"></div>
+                   <table class="others">
+                    <thead>
+                        <tr>
+                            <th>Tipus</th>
+                            <th>Descripció</th>
+                            <th>Dades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                            <td><b>Freqüència</b></td>
+                            <td>SELECCIONAT PER INTEL·LIGÈNCIA ARTIFICIAL ENTRE 58320 MHz i 69120 MHz.</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                            <td><b>Alçada d'instal·lació</b></td>
+                            <td>25 metros.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                            <td><b>Distància entre antenes</b></td>
+                            <td>8.33 quilòmetres</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut torre principal, B</b></td>
+                            <td>268 graus oest</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut B, torre principal</b></td>
+                            <td>88 graus est</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                            <td><b>Senyal estimat</b></td>
+                            <td>-47 dBm</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></td>
+                            <td><b>Prestacions estimades</b></td>
+                            <td>2.7 gbps</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                     <p>====</p>
+                    <div class="dashed"><h3 id="princ_C">Enllaç torre principal feia torre C</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_4.webp" alt="backhaul privada 5G"></div>
+                   <table class="others">
+                    <thead>
+                        <tr>
+                            <th>Tipus</th>
+                            <th>Descripció</th>
+                            <th>Dades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                            <td><b>Freqüència</b></td>
+                            <td>SELECCIONAT PER INTEL·LIGÈNCIA ARTIFICIAL ENTRE 58320 MHz i 69120 MHz.</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                            <td><b>Alçada d'instal·lació</b></td>
+                            <td>30 metros.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                            <td><b>Distància entre antenes</b></td>
+                            <td>10.12 quilòmetres</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut torre principal, C</b></td>
+                            <td>149 graus sur / est</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut C, torre principal</b></td>
+                            <td>329 graus norte / oest</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                            <td><b>Senyal estimat</b></td>
+                            <td>-50 dBm</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></td>
+                            <td><b>Prestacions estimades</b></td>
+                            <td>2.7 gbps</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                      <p>====</p>
+                    <div class="dashed"><h3 id="princ_D">Enllaç torre principal feia torre D</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_5.webp" alt="backhaul privada 5G"></div>
+                   <table class="others">
+                    <thead>
+                        <tr>
+                            <th>Tipus</th>
+                            <th>Descripció</th>
+                            <th>Dades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                            <td><b>Freqüència</b></td>
+                            <td>SELECCIONAT PER INTEL·LIGÈNCIA ARTIFICIAL ENTRE 58320 MHz i 69120 MHz.</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                            <td><b>Alçada d'instal·lació</b></td>
+                            <td>20 metros.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                            <td><b>Distància entre antenes</b></td>
+                            <td>6.24 quilòmetres</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut torre principal, D</b></td>
+                            <td>125 graus sur / est</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut D, torre principal</b></td>
+                            <td>305 graus norte / oest</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                            <td><b>Senyal estimat</b></td>
+                            <td>-47 dBm</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></td>
+                            <td><b>Prestacions estimades</b></td>
+                            <td>2.7 gbps</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                <p>====</p>
+                 <div class="dashed"><h3>Enllaços de seguretat xarxa de backhaul</h3></div>
+                   <p>====</p>
+                    <div class="dashed"><h3 id="A_B">Enllaç de respatller torre A feia torre B</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_6.webp" alt="backhaul privada 5G"></div>
+                   <table class="others">
+                    <thead>
+                        <tr>
+                            <th>Tipus</th>
+                            <th>Descripció</th>
+                            <th>Dades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                            <td><b>Freqüència</b></td>
+                            <td>Automatico en la banda de 5GHz.</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                            <td><b>Alçada d'instal·lació</b></td>
+                            <td>30 metros.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                            <td><b>Distància entre antenes</b></td>
+                            <td>6.17 quilòmetres</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut A, B</b></td>
+                            <td>125 graus sur / est</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut B, A</b></td>
+                            <td>305 graus norte / oest</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                            <td><b>Senyal estimat</b></td>
+                            <td>-47 dBm</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></td>
+                            <td><b>Prestacions estimades</b></td>
+                            <td>2.55 gbps</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                   <p>====</p>
+                    <div class="dashed"><h3 id="B_C">Enllaç de respatller torre B feia torre C</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_7.webp" alt="backhaul privada 5G"></div>
+                   <table class="others">
+                    <thead>
+                        <tr>
+                            <th>Tipus</th>
+                            <th>Descripció</th>
+                            <th>Dades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                            <td><b>Freqüència</b></td>
+                            <td>Automatico en la banda de 5GHz.</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                            <td><b>Alçada d'instal·lació</b></td>
+                            <td>30 metros.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                            <td><b>Distància entre antenes</b></td>
+                            <td>15.9 quilòmetres</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut B, C</b></td>
+                            <td>122 graus sur / est</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut C, B</b></td>
+                            <td>302 graus norte / oest</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                            <td><b>Senyal estimat</b></td>
+                            <td>-70 dBm</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></td>
+                            <td><b>Prestacions estimades</b></td>
+                            <td>1.39 gbps</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <p>====</p>
+                    <div class="dashed"><h3 id="C_D">Enllaç de respatller torre C feia torre D</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_8.webp" alt="backhaul privada 5G"></div>
+                   <table class="others">
+                    <thead>
+                        <tr>
+                            <th>Tipus</th>
+                            <th>Descripció</th>
+                            <th>Dades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                            <td><b>Freqüència</b></td>
+                            <td>Automatico en la banda de 5GHz.</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                            <td><b>Alçada d'instal·lació</b></td>
+                            <td>30 metros.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                            <td><b>Distància entre antenes</b></td>
+                            <td>5.16 quilòmetres</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut C, D</b></td>
+                            <td>360 graus norte</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut D, C</b></td>
+                            <td>180 graus sur</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                            <td><b>Senyal estimat</b></td>
+                            <td>-61 dBm</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></td>
+                            <td><b>Prestacions estimades</b></td>
+                            <td>3.09 gbps</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                     <p>====</p>
+                    <div class="dashed"><h3 id="D_A">Enllaç de respatller torre D feia torre A</h3></div>
+                   <div class="proyectos"><img src="/Imagenes/backhaul_privada_5G_9.webp" alt="backhaul privada 5G"></div>
+                   <table class="others">
+                    <thead>
+                        <tr>
+                            <th>Tipus</th>
+                            <th>Descripció</th>
+                            <th>Dades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-solid fa-satellite-dish" aria-hidden="true"></i></td>
+                            <td><b>Freqüència</b></td>
+                            <td>Automatico en la banda de 5GHz.</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-text-height" aria-hidden="true"></i></td>
+                            <td><b>Alçada d'instal·lació</b></td>
+                            <td>25 metros.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-people-arrows" aria-hidden="true"></i></td>
+                            <td><b>Distància entre antenes</b></td>
+                            <td>11.54 quilòmetres</td>
+                        </tr>
+                         <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut C, D</b></td>
+                            <td>310 graus norte</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-compass" aria-hidden="true"></i></td>
+                            <td><b>Azimut D, C</b></td>
+                            <td>130 graus sur</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-solid fa-signal" aria-hidden="true"></i></td>
+                            <td><b>Senyal estimat</b></td>
+                            <td>-68 dBm</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></td>
+                            <td><b>Prestacions estimades</b></td>
+                            <td>1.97 gbps</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <div class="dashed"><h3 id="idiomes">IDIOMES</h3></div>
+                    <p><span class="fi fi-es-ct fis"></span>&nbsp;<a href="/cat/projectes_exemple/backhaul_RAN_yambu.html" title="BSDTelecom Lobby SL, Redama |  Backhaul RAN a Yambu Riccardo Giuntoli">Catalan</a>&nbsp;•&nbsp;<span class="fi fi-es fis"></span>&nbsp;<a href="/proyectos_ejemplo/backhaul_RAN_yambu.html" title="BSDTelecom Lobby SL, Redama | Backhaul privada para 5G RAN en Yambu Riccardo Giuntoli">Espanyol</a>&nbsp;•&nbsp;<span class="fi fi-gb fis"></span>&nbsp;<a href="/en/example_projects/backhaul_RAN_yambu.html" title="BSDTelecom Lobby SL, Redama | Private backhaul for 5G RAN in Yambu Riccardo Giuntoli">Anglès</a>&nbsp;•&nbsp;<span class="fi fi-it fis"></span>&nbsp;<a href="/it/progetti_esempio/backhaul_RAN_yambu.html" title="BSDTelecom Lobby SL, Redama | Backhaul privata per RAN 5G in Yambu Riccardo Giuntoli">Italià</a></p>
+				<p>====</p>
+				<div class="dashed"><h3 id="descargas">DESCARREGA</h3></div>
+				<br>
+				<a href="/cat/descarregues/CV_EXECUTIU_RICCARDO_GIUNTOLI.pdf" download aria-label="CV executiu Riccardo Giuntoli"><i class="fas fa-file-pdf" aria-hidden="true"></i>CV executiu Riccardo Giuntoli</a>&nbsp;•&nbsp;<a href="/cat/descarregues/PORTAFOLI_TECNIC_RICCARDO_GIUNTOLI.pdf" download aria-label="Cartera tècnica Riccardo Giuntoli"><i class="fas fa-file-pdf" aria-hidden="true"></i>Cartera tècnica Riccardo Giuntoli</a><br><a href="/cat/descarregues/RAN_PRIVAT_YANBU.pdf" download aria-label="RAN 5G privat a Yanbu"><i class="fas fa-file-pdf" aria-hidden="true"></i>RAN 5G privat a Yanbu</a>&nbsp;•&nbsp;<a href="/cat/descarregues/BACKHAUL_PRIVAT_YANBU.pdf" download aria-label="backhaul privat per a RAN 5G a Yanbu"><i class="fas fa-file-pdf" aria-hidden="true"></i>backhaul privat per a RAN 5G a Yanbu</a><br><a href="/descargas/CARTA_DE_RECOMENDACIONES_CUBA.pdf" download aria-label="targeta de recomanació de l'Havana"><i class="fas fa-file-pdf" aria-hidden="true"></i>Carta de recomanació des de l'Havana</a>
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img src="/Imagenes/firma_empresa_final.webp" title="BSDTelecom Lobby SL, Redama | Logotipo" >
+							</td>
+							<td>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cogs" aria-hidden="true" style="color: red"></i>&nbsp;&nbsp;<cite>Unix rules.</cite></p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-receipt"></i>&nbsp;&nbsp;Número d'IVA europeu <strong>ESB16430621</strong></p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-code"></i>&nbsp;&nbsp;<a href="/sitemap.xml">sitemap.xml</a></p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-clock-rotate-left"></i>&nbsp;&nbsp;darrera modificació <strong>desembre 2025</strong></p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-w3c"></i>&nbsp;&nbsp;<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbsd.telecomlobby.com%2Fcat%2Fprojectes_exemple%2FRAN_privada_5G.html" title="BSDTelecom Lobby SL, Redama | Curriculum Vitae ejecutivo Riccardo Giuntoli, codigo HTML válido">HTML 5.2</a></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

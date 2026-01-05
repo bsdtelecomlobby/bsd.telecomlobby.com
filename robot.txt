@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://bsd.telecomlobby.com/sitemap.xml

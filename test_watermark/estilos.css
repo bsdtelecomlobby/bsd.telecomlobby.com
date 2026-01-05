@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fondo blanco como en la imagen */
+    position: relative; /* Importante para posicionar el watermark relativo al body */
+}
+
+#contenido {
+    max-width: 800px; /* Ancho máximo para centrar el contenido, ajusta según necesites */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 20px;
+    position: relative; /* Para que el z-index funcione si es necesario */
+    z-index: 1; /* Asegura que el contenido esté por encima del watermark */
+}
+
+#watermark {
+    position: absolute; /* O usa 'fixed' si quieres que no se mueva al scroll */
+    top: 0; /* Desde la parte superior */
+    right: 0; /* Pegado al lado derecho */
+    width: 200px; /* Ancho de la imagen de la torre, ajusta según tu PNG */
+    height: 100vh; /* Altura completa de la ventana (viewport) para que sea verticalmente larga */
+    background-image: url('bsdtelecom_lobby_torre.webp'); /* Ruta a tu imagen PNG */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: contain; /* Ajusta la imagen para que quepa sin distorsión */
+    background-position: center right; /* Centrada en el derecho */
+    opacity: 0.2; /* Transparencia: 0.2 es baja como un watermark sutil, ajusta entre 0 y 1 */
+    pointer-events: none; /* Para que no interfiera con clics en el contenido */
+    z-index: 0; /* Debajo del contenido */
+}
