@@ -7,9 +7,9 @@ Cajamarca
 Callao
 Cusco
 Huancavelica
-Huánuco
+Huanuco
 Ica
-Junín
+Junin
 La Libertad
 Lambayeque
 Lima Metropolitana
@@ -24,4 +24,4 @@ San Martín
 Tacna
 Tumbes
 Ucayali
-Perú
+Peru

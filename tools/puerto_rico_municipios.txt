@@ -8,7 +8,7 @@ Arecibo
 Arroyo
 Barceloneta
 Barranquitas
-Bayamón
+Bayamon
 Cabo Rojo
 Caguas
 Camuy
@@ -20,7 +20,7 @@ Ceiba
 Ciales
 Cidra
 Coamo
-Comerío
+Comerio
 Corozal
 Culebra
 Dorado
@@ -42,29 +42,29 @@ Lajas
 Lares
 Las Marías
 Las Piedras
-Loíza
+Loiza
 Luquillo
-Manatí
+Manati
 Maricao
 Maunabo
-Mayagüez
+Mayaguez
 Moca
 Morovis
 Naguabo
 Naranjito
 Orocovis
 Patillas
-Peñuelas
+Penuelas
 Ponce
 Quebradillas
-Rincón
-Río Grande
+Rincon
+Rio Grande
 Sabana Grande
 Salinas
-San Germán
-San Juan (capital)
+San German
+San Juan
 San Lorenzo
-San Sebastián
+San Sebastian
 Santa Isabel
 Toa Alta
 Toa Baja

@@ -1,10 +1,10 @@
 Azua
 Bahoruco
 Barahona
-Dajabón
+Dajabon
 Duarte
 El Seibo
-Elías Piña
+Elias Pina
 Espaillat
 Hato Mayor
 Hermanas Mirabal
@@ -12,21 +12,21 @@ Independencia
 La Altagracia
 La Romana
 La Vega
-María Trinidad Sánchez
-Monseñor Nouel
+Maria Trinidad Sanchez
+Monsenor Nouel
 Monte Cristi
 Monte Plata
 Pedernales
 Peravia
 Puerto Plata
-Samaná
-San Cristóbal
-San José de Ocoa
+Samana
+San Cristobal
+San Jose de Ocoa
 San Juan
-San Pedro de Macorís
-Sánchez Ramírez
+San Pedro de Macoris
+Sanchez Ramirez
 Santiago
-Santiago Rodríguez
+Santiago Rodriguez
 Santo Domingo
 Valverde
 Distrito Nacional

@@ -1,25 +1,24 @@
-Estado Amazonas
-Estado Anzoátegui
-Estado Apure
-Estado Aragua
-Estado Barinas
-Estado Bolívar
-Estado Carabobo
-Estado Cojedes
-Estado Delta Amacuro
+Amazonas
+Anzoategui
+Apure
+Aragua
+Barinas
+Bolívar
+Carabobo
+Cojedes
+Delta Amacuro
 Distrito Capital
-Estado Falcón
-Estado Guárico
-Estado La Guaira
-Estado Lara
-Estado Mérida
-Estado Miranda
-Estado Monagas
-Estado Nueva Esparta
-Estado Portuguesa
-Estado Sucre
-Estado Táchira
-Estado Trujillo
-Estado Yaracuy
-Estado Zulia
-Dependencias federales
+Falcon
+Guarico
+La Guaira
+Lara
+Merida
+Miranda
+Monagas
+Nueva Esparta
+Portuguesa
+Sucre
+Tachira
+Trujillo
+Yaracuy
+Zulia
