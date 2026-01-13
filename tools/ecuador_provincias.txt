@@ -1,24 +1,24 @@
 Azuay
-Bolívar
-Cañar
+Bolivar
+Canar
 Carchi
 Chimborazo
 Cotopaxi
 El Oro
 Esmeraldas
-Galápagos
+Galapagos
 Guayas
 Imbabura
 Loja
-Los Ríos
-Manabí
+Los Rios
+Manabi
 Morona Santiago
 Napo
 Orellana
 Pastaza
 Pichincha
 Santa Elena
-Santo Domingo de los Tsáchilas
-Sucumbíos
+Santo Domingo de los Tsachilas
+Sucumbios
 Tungurahua
 Zamora Chinchipe
