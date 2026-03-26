@@ -410,11 +410,18 @@ label.menuicon {
       font-size: 1.1rem;
 }
 
-.table-container > table > thead > tr > th, .table-container > table > tbody > tr > td {
+.table-container > table > thead > tr > th {
       padding: 12px 15px;
       text-align: left;
       border: 1px solid #ddd;
     }
+
+	.table-container > table > tbody > tr > td {
+	  padding: 12px 15px;
+	        text-align: left;
+
+	  border: 1px solid #ddd;
+	}
 
     .table-container > table > thead > tr > th {
       background-color: #0175ab;
