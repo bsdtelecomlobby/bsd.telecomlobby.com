@@ -405,7 +405,7 @@ label.menuicon {
 }
 
 .section-title {
-      background-color: #b3ada9;
+      background-color: #f3405a;
       font-weight: bold;
       font-size: 1.1rem;
 }
@@ -423,7 +423,7 @@ label.menuicon {
     }
 
    .table-container > table > thead > tr:nth-child(even) {
-      background-color: #f3405a;
+      background-color: #f9f9f9;
     }
 
 /* mobile overrides, reverse notion of hamburger icon */
