@@ -394,6 +394,8 @@ label.menuicon {
 
 .table-container {
       flex: 2;
+	  margin-left: 2em;
+	  margin-right: 2em;
 }
 
 /* mobile overrides, reverse notion of hamburger icon */
