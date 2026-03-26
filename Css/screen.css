@@ -392,7 +392,9 @@ label.menuicon {
   width: 250px;
 }
 
-
+.table-container {
+      flex: 2;
+}
 
 /* mobile overrides, reverse notion of hamburger icon */
 /* Media query para móviles */
