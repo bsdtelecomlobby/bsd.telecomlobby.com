@@ -397,6 +397,12 @@ label.menuicon {
 	  margin-left: 2em;
 	  margin-right: 2em;
 }
+.table-container > table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 30px;
+      font-size: 1rem;
+}
 
 /* mobile overrides, reverse notion of hamburger icon */
 /* Media query para móviles */
