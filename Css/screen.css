@@ -404,6 +404,12 @@ label.menuicon {
       font-size: 1rem;
 }
 
+.section-title {
+      background-color: #b3ada9;
+      font-weight: bold;
+      font-size: 1.1rem;
+}
+
 /* mobile overrides, reverse notion of hamburger icon */
 /* Media query para móviles */
 @media (max-width: 768px) {
